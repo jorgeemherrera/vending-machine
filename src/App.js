@@ -1,11 +1,10 @@
-
 import './App.css';
-import VendingMachine from './components/VendingMachine';
+import VendingMachine from './Components/VendingMachine'
 
 function App() {
   return (
-    <div className="App">
-      <VendingMachine/>
+    <div className="App" data-testid="app-component">
+      <VendingMachine data-testid="vending-machine-component" />
     </div>
   );
 }

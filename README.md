@@ -40,6 +40,11 @@ Make sure you have Node.js and npm installed on your machine.
    ```bash
    npm install
 
+4. Node.js version:
+
+   ```bash
+   nvm use 16 -> use minimum Node.js v16.20.0 version 
+
 ### Running the App
 
 Run the app in development mode:

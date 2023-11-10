@@ -50,6 +50,14 @@ Open [http://localhost:3000](localhost:3000) on your browser to view the app.
 
 ```
 
+### Running Unit Tests
+
+Run the unit tests using:
+
+   ```bash
+   npm test
+
+``` 
 ### Usage
 
 - Insert money using the provided buttons.

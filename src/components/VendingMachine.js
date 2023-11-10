@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import MoneyInput from './MoneyInput';
-import Item from './Item';
+import MoneyInput from './MoneyInput.js';
+import Item from './Item.js';
 import './VendingMachine.scss';
-import { availableItemsData } from './../Data/AvailableItems';
-import { availableChangeData } from './../Data/availableChange';
+import { availableItemsData } from '../Data/AvailableItems';
+import { availableChangeData } from '../Data/availableChange';
 
 const initializeState = () => {
     return {
@@ -33,7 +33,6 @@ const VendingMachine = () => {
         if (item && item.count > 0 && insertedMoney >= item.price) {
             const change = insertedMoney - item.price;
 
-            // Update state using functional updates for better concurrency control
             setVendingMachineState((prevItems) => ({
                 ...prevItems,
                 [itemName]: { ...item, count: item.count - 1 },

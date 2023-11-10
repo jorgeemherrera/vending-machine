@@ -1,3 +1,5 @@
+import './MoneyInput.scss'
+
 const MoneyInput = ({ amount, onInsert }) => (
     <button onClick={() => onInsert(amount)}>Insert ${amount}</button>
 );

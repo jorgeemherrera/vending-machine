@@ -1,4 +1,4 @@
-
+import './Item.scss'
 const Item = ({ name, price, count, onSelect }) => (
   <li>
     {name}: ${price} ({count} available)
